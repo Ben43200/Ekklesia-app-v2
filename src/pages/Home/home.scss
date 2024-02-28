@@ -87,9 +87,18 @@ h2{
   }
 }
 
+
+// ajout scss image
+.box-image img{
+    height:300px;
+}
+
+
+
+
 img{
   width:100%;
-  height: 100%;
+//   height: 100%;
 }
 
 //positionnement des grid-container dans le #main
