@@ -13,8 +13,7 @@ import "./navbar.scss";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  let menuRef = useRef()
-
+  let menuRef = useRef();
 
   const handleShowNavbar = () => {
     // début modif scroll
@@ -32,34 +31,38 @@ const Navbar = () => {
   // const handleOpen = () => {
   //   setOpen(!open);
   // };
-  useEffect(()=> {
-    let handler = (e) =>{
-      if(!menuRef.current.contains(e.target)){
-      setShowNavbar(false)
-      // console.log(menuRef.current);
-        
-      
-    }
-  };
-    document.addEventListener("mousedown", handler)
-  
-  return()=>{
-    document.removeEventListener("mousedown", handler)
-  }
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setShowNavbar(false);
+        // console.log(menuRef.current);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
   });
 
   // const closeAndTop = () => {
   //   window.scrollTo(0, 0);
   //   setShowNavbar(!showNavbar);
   // };
-
+  const menuItemsData = [
+    { title: "Accueil", url: "/" },
+    { title: "Notre mission", url: "/mission" },
+    { title: "Notre méthodologie", url: "/methodologie" },
+    { title: "Nos services", url: "/services" },
+    { title: "Nos réalisations", url: "/realisations" },
+    { title: "Contact", url: "/contact" },
+  ];
   return (
     <header>
       <nav className="navbar">
         <div className="container">
-        
           <img src={logo} className="logo-1" alt="logo" />
-       
+
           <div className="menu-icon" onClick={handleShowNavbar}>
             {/* <Hamburger /> */}
             <span className="burger-icon" ref={menuRef}>
@@ -69,7 +72,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
-            <ul>
+            {/* <ul>
               <li>
                 <NavLink to="/" onClick={closeAndTop}>
                   Accueil
@@ -100,7 +103,20 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-            </ul>
+            </ul> */}
+              <ul className="menus">
+             
+
+        {menuItemsData.map((menu, index) => {
+          return (
+            <li className="menu-items" key={index}>
+              <NavLink to= "{menu.url}" onClick={closeAndTop}>{menu.title}
+              </NavLink>
+            </li>
+           
+          );
+        })}
+      </ul>
           </div>
         </div>
       </nav>
