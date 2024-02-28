@@ -16,6 +16,8 @@ import ReactDOM from "react-dom/client";
 
 import Home from "./pages/Home/Home.jsx";
 import Navbar from "./components/Navbar";
+import Contact from "./pages/Contact/Contact";
+
 
 
 
@@ -41,7 +43,7 @@ root.render(
 
       <Route path="*" element={<Error />} /> */}
 
-{/* <Route path="/contact" element={<ContactPage />} /> */}
+<Route path="/contact" element={<Contact />} />
 
 
 
