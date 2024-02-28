@@ -3,16 +3,14 @@ import { listings } from "../utils/data";
 
 function CardImage() {
     const listingImage= listings.map((listing) => (
-    <div key={listing.id}>
-      <h2>{listing.description}</h2>
+    <div className= "box-image" key={listing.id}>
       <img src={listing.image} alt={listing.description}/>
      </div>  
     ))
   
     return (
     <div>
-      <h1>Free Stuff Page</h1>
-      {listingImage}
+    {listingImage}
     </div>
     )
   }

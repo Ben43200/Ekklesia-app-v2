@@ -4,10 +4,13 @@ import CardImage from "../../components/CardImage";
 import "./home.scss"
 function Home() {
   return (
-    <div className="App">
+    <main>
+    <div className="grid-container">
+
 {/* <h1>Hello World</h1> */}
 <CardImage />
     </div>
+    </main>
   );
 }
 
