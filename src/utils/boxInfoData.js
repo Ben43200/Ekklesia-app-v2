@@ -1,4 +1,4 @@
-export const listings = [
+export const infodata = [
   {
     id: 1,
     title: "Un site internet, pourquoi ?",

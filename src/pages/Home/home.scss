@@ -109,7 +109,7 @@ img{
   grid-template-columns: 1fr;
 @include media(tablet) {
 
-  grid-template-columns: repeat(2,1fr);
+//   grid-template-areas: "1" "2";
   
 }
 }
@@ -127,6 +127,9 @@ width:100%;
 @include media(tablet) {
 
   grid-template-columns: repeat(2,1fr);
+//   grid-template-areas: "1 2"
+//                         "1 2"
+//                        ;
   
 }
 }
@@ -144,24 +147,25 @@ width:100%;
   padding-bottom: 15px;
   @include media(tablet) {
     font-size: 1.5rem;
-}}
+}
+}
   
 
-  @include media(tablet) {
+//   @include media(tablet) {
 
 
-    .grid-container .box-info:nth-child(4){
-    grid-column: 1/2;
-    grid-row:2;
+//     .grid-container .box-info:nth-child(4){
+//     grid-column: 1/2;
+//     grid-row:2;
 
-  };
+//   };
   
-  .grid-container .box-info:last-child{
-    grid-column: 1/2;
-    grid-row:4;
+//   .grid-container .box-info:last-child{
+//     grid-column: 1/2;
+//     grid-row:4;
 
-  }
-};
+//   }
+// };
 
 main{
   row-gap: 20px;
@@ -188,3 +192,28 @@ button{
   // padding:0px 10px;
   margin: 10px 0px;
 }
+
+
+.grid-container .box-info:nth-child(even){
+
+    border: 10px solid red;
+    grid-column: 1;
+}
+
+.grid-container  .box-image:nth-child(odd){
+
+    border: 10px solid red;
+    grid-column:  2;
+}
+
+
+.box-info-container{
+    display: grid;
+}
+
+.box-image-container{
+    display: grid;
+}
+
+
+// #root > main > div > div.box-info-container > div:nth-child(1)
