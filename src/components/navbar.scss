@@ -101,7 +101,9 @@ header {
   position: relative;
 }
 
-.nav-elements ul a.active::after {
+// .nav-elements ul a.active::after {
+.nav-elements ul li a.active::after {
+
   content: "";
   position: absolute;
   bottom: -4px;

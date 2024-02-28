@@ -50,12 +50,12 @@ const Navbar = () => {
   //   setShowNavbar(!showNavbar);
   // };
   const menuItemsData = [
-    { title: "Accueil", url: "/" },
-    { title: "Notre mission", url: "/mission" },
-    { title: "Notre méthodologie", url: "/methodologie" },
-    { title: "Nos services", url: "/services" },
-    { title: "Nos réalisations", url: "/realisations" },
-    { title: "Contact", url: "/contact" },
+    { title: "Accueil", url: "" },
+    { title: "Notre mission", url: "mission" },
+    { title: "Notre méthodologie", url: "methodologie" },
+    { title: "Nos services", url: "services" },
+    { title: "Nos réalisations", url: "realisations" },
+    { title: "Contact", url: "contact" },
   ];
   return (
     <header>
@@ -110,7 +110,7 @@ const Navbar = () => {
         {menuItemsData.map((menu, index) => {
           return (
             <li className="menu-items" key={index}>
-              <NavLink to= "{menu.url}" onClick={closeAndTop}>{menu.title}
+              <NavLink to={`/${menu.url}`} onClick={closeAndTop}>{menu.title}
               </NavLink>
             </li>
            
