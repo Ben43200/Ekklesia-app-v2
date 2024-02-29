@@ -9,7 +9,7 @@ function CardImage() {
     ))
   
     return (
-    <div box-image-container>
+    <div className="box-image-container">
     {listingImage}
     </div>
     )
