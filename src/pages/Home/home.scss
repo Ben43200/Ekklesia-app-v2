@@ -113,7 +113,7 @@ h2{
 .box-card img{
   width:100%;
   padding:0;
-  height:400px;
+  height:350px;
   object-fit: cover;
   
     @include media(tablet) {
@@ -169,7 +169,10 @@ width:100%;
   // font-family: questrial;
   font-family: "Questrial", sans-serif;
   
-  padding: 0px 3px;
+  // padding: 0px 3px;
+  padding: 50px 3px;
+  height: 15rem;
+// }
 
 }
 .box-info:first-child{
