@@ -110,8 +110,17 @@ h2{
 
 
 // ajout scss image
-.box-image img{
-    height:300px;
+.box-card img{
+  width:100%;
+  padding:0;
+  height:400px;
+  object-fit: cover;
+  
+    @include media(tablet) {
+    width:500px;
+    padding:40px;
+    height:400px;
+}
 }
 
 
