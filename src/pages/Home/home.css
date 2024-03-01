@@ -255,6 +255,7 @@ h2, h3 {
   height: 0px;
   border-radius: 7px;
   margin: 10px 0px;
+  text-align: center;
 }
 
 .button-box {
