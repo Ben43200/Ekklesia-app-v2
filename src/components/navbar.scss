@@ -32,7 +32,17 @@ header {
   list-style: none;
 }
 
-
+// #root > header > nav > div > div.nav-elements.false > ul > li >a{
+//   @include media(tablet) {
+//     // border-radius: 25px;
+//     // height: 140px;
+//     // width: 7%;
+//     font-size:12px;
+//   // height: 60px;
+// color:red;
+//   // list-style: none;
+// }
+// }
 //Menu container
 
 .navbar {
@@ -126,7 +136,9 @@ header {
   }
 }
 
-@media (max-width: 600px) {
+// @media (max-width: 600px) {
+@media (max-width: 768px) {
+
   .menu-icon {
     display: block;
     cursor: pointer;
