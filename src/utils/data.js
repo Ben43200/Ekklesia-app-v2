@@ -10,6 +10,7 @@ export const listings = [
          "            d’Églises.Nous sommes convaincus que la création d’un site ou la" +
          "            refonte de ce dernier ( si vous en avez déjà un) sera un atout" +
          "            fondamental pour dynamiser votre paroisse",
+         "link": "mission",
     },
     {
       "id": 2,
@@ -20,6 +21,7 @@ export const listings = [
     "            qu'il reflète son histoire sa géographie ses valeurs et la vie de sa" +
     "            communauté. Nous travaillons avec les paroisses de toutes tailles," +
     "            nous vous accompagnerons tout au long de votre projet.",
+    "link": "services",
     },
     {
       "id": 3,
@@ -34,6 +36,7 @@ export const listings = [
     "            votre site internet. Nous travaillons à ce que votre site internet" +
     "            ait une version écran ordinateur, une version tablette, et surtout" +
     "            une version smartphone, de plus en plus utilisée de nos jours.",
+    "link": "methodologie",
     },
     {
       "id": 4,
@@ -45,6 +48,7 @@ export const listings = [
     "            membres de l’église protestante unie du crestois(Drôme). Nous avons" +
     "            pour vocation de vous aider à dynamiser votre église locale à" +
     "            travers ce média.",
+    "link": "contact",
     }
 
   ]

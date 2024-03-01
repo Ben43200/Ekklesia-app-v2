@@ -102,7 +102,7 @@ header {
     padding-left: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu-icon {
     display: block;
     cursor: pointer;
