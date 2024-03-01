@@ -171,9 +171,12 @@ width:100%;
   
   // padding: 0px 3px;
   padding: 50px 3px;
+  height:17rem;
+  @include media(tablet) {
   height: 15rem;
 // }
 
+}
 }
 .box-info:first-child{
   font-size: 1.2rem;
