@@ -217,6 +217,9 @@ img {
   font-family: "Questrial", sans-serif;
   padding: 50px 3px;
   height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .box-info {
