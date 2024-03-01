@@ -1,10 +1,11 @@
 import { listings } from "../utils/data";
-
+// @import "./variables.scss";
+// import "./home.scss"
 
 function Card() {
     const listingImage= listings.map((listing) => (
     //   <div className="grid-container">
-    <div className= "box-image" key={listing.id}>
+    <div className= "box-card" key={listing.id}>
       <img src={listing.image} alt={listing.description}/>
      {/* {/* </div> */}
          <div className= "box-info">

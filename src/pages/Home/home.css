@@ -154,20 +154,21 @@ h2 {
   grid-area: footer;
 }
 
-.box-image {
-  display: flex;
+.box-card {
   align-items: center;
   justify-content: center;
   align-items: stretch;
   place-self: center;
   box-shadow: 3px 3px 7px 2px #4054b2;
-  height: 300px;
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 768px) {
   .box-image {
     width: auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .box-image img {
@@ -250,9 +251,5 @@ button {
 }
 
 .box-info-container {
-  display: grid;
-}
-
-.box-image-container {
   display: grid;
 }/*# sourceMappingURL=home.css.map */

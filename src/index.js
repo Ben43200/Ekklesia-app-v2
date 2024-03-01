@@ -18,7 +18,7 @@ import Home from "./pages/Home/Home.jsx";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
 
-
+import Footer from "./components/Footer.js";
 
 
 
@@ -51,7 +51,7 @@ root.render(
   
 
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
 
   {/* </Router> */}
   </BrowserRouter>
