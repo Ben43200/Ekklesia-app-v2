@@ -276,6 +276,19 @@ h2,h3{
 //   }
 // }
 
+.box-info{
+  // grid-column: 1;
+  
+    // grid-row: 1;
+    // border: 2px solid red;
+}
+
+
+// .box-info:nth-of-type(even){
+//   grid-column: 2;
+//     grid-row: 1;
+//     border: 2px solid blue;
+// }
 
 
 
@@ -286,3 +299,23 @@ h2,h3{
 
 
 // #root > main > div > div.box-info-container > div:nth-child(1)
+
+#root > main > div > div:nth-child(3) > div{
+  grid-row:2;
+  @include media(tablet) {
+
+    grid-row: 1;
+    // border: 2px solid red;
+}
+
+  // border: 2px solid blue;
+}
+
+#root > main > div > div:nth-child(1) > div{
+  grid-row:2;
+  @include media(tablet) {
+
+    grid-row: 1;
+    // border: 2px solid red;
+}
+}
