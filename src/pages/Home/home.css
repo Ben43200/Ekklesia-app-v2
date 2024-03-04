@@ -158,9 +158,8 @@ h2 {
   align-items: center;
   justify-content: center;
   place-self: center;
-  box-shadow: 3px 3px 7px 2px #4054b2;
-  border-radius: 10px;
   display: grid;
+  gap: 20px;
   grid-template-columns: 1fr;
 }
 @media screen and (min-width: 768px) {
@@ -176,13 +175,18 @@ h2 {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 3px 3px 7px 2px #4054b2;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .box-card img {
     width: 500px;
-    padding: 40px;
     height: 400px;
   }
+}
+
+.box-card:nth-of-type(2n) {
+  justify-items: end;
 }
 
 img {
@@ -220,6 +224,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .box-info {
@@ -255,10 +260,11 @@ h2, h3 {
   color: white;
   text-decoration: none;
   width: 130px;
-  height: 0px;
+  height: 40px;
   border-radius: 7px;
   margin: 10px 0px;
   text-align: center;
+  padding: 5px;
 }
 
 .button-box {
@@ -287,4 +293,38 @@ h2, h3 {
 
 .box-info-container {
   display: grid;
+}
+
+#root > main > div > div:nth-child(1) > div {
+  grid-row: 2;
+}
+@media screen and (min-width: 768px) {
+  #root > main > div > div:nth-child(1) > div {
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+#root > main > div > div:nth-child(2) > div {
+  grid-row: 2;
+}
+@media screen and (min-width: 768px) {
+  #root > main > div > div:nth-child(2) > div {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #root > main > div > div:nth-child(4) > div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #root > main > div > div:nth-child(4) > div {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }/*# sourceMappingURL=home.css.map */
